@@ -1,0 +1,50 @@
+:root {
+    /*Cores*/
+    --vermelho: #A81201;
+    --preto: #262626;
+    --cinza-escuro: #626262;
+    --cinza-medio: #B6B6B6;
+    --cinza-claro: #EDEDED;
+    --branco: #F9F9F9;
+    --cor-destaque: #BD7B74;
+
+    
+    font-size: 62.5% /* 10px = 1rem */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    overflow-x:hidden;
+}
+
+body {
+    background-color: var(--branco);
+}
+
+.bg-cinza {
+    background-color: var(--cinza-claro);
+}
+
+.bg-preto {
+    background-color: var(--preto);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.secao {
+    padding: 8.8rem 0 5rem;
+}

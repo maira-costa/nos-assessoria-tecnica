@@ -1,0 +1,54 @@
+.footer {
+    border-top: 1px solid white;
+}
+
+.container--footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.infos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.footer__logo > img {
+    margin-bottom: 2rem;
+    width: 100px;
+}
+
+address.texto {
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer__social {
+    border: 1px solid var(--cinza-claro);  
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.footer__social-lista {
+    align-items: center;
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.social__icone--pequeno > i {
+    color: var(--branco);
+    font-size: 2.4rem;
+}
+
+.direitos {
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+.formulario {
+    border: 1px solid var(--cinza-claro);
+    padding: 4rem 1rem;
+}
+
+.formulario > .titulo {
+    color: var(--branco);
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.formulario > .subtitulo {
+    color: var(--branco);
+    margin: 0 0 4rem;
+    text-align: center;
+}
+
+.formulario__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--cinza-claro);
+    color: var(--branco);
+    display: block;
+    font: 300 1.6rem 'Josefin Sans', sans-serif;
+    margin-bottom: 1.5rem;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.formulario__input::placeholder {
+    color: var(--cinza-claro);
+    font: 300 1.6rem 'Josefin Sans', sans-serif;
+}
+
+.formulario__input:focus::placeholder {
+    color: transparent;
+}
+
+textarea {
+    resize: none;
+}

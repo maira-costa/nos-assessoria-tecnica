@@ -1,0 +1,77 @@
+.galeria__mosaico {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*========= Imagens ==========*/
+.galeria__img {
+    filter: grayscale(100%);
+    transition: all 0.4s ease-in-out;
+}
+
+.galeria__img:hover, .galeria__img:focus {
+    filter: grayscale(0%);
+}
+
+.duas-colunas {
+    grid-column: span 2;
+}
+
+/*========= Quadrados dos Mosaicos ==========*/
+.quadrado {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.quadrado--branco {
+    background-color: var(--branco);
+}
+
+.quadrado--cinza {
+    background-color: var(--cinza-escuro);
+}
+
+.quadrado--destaque {
+    background-color: var(--cor-destaque);
+}
+
+.quadrado--listras {
+    background: repeating-linear-gradient(
+        135deg, 
+        transparent, 
+        transparent 5px,
+        var(--preto) 5px,
+        var(--preto) 6px
+    );
+}
+
+.quadrado--preto {
+    background-color: var(--preto);
+}
+
+.quadrado--vermelho {
+    background-color: var(--vermelho);
+}
+
+.quadrado--texto {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.quadrado--texto > .texto {
+    align-items: center;
+    border: 1px solid var(--preto);
+    display: flex;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.quadrado--texto > .texto--branco {
+    border: 1px solid var(--branco);
+    padding: 10px;
+}
+

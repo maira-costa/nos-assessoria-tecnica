@@ -1,0 +1,117 @@
+/*========= Botões ==========*/
+.botao {
+    align-items: center;
+    background-color: var(--vermelho);
+    border: none;
+    color: var(--branco);
+    font: 600 1.2rem Montserrat, sans-serif;
+    outline: none;
+    padding: 0.625rem;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.botao--responsivo {
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: var(--cor-destaque);
+}
+
+/*========= Títulos ==========*/
+.titulo {
+    color: var(--preto);
+    font: 700 3rem Monserrat, sans-serif;
+    margin-bottom: 4rem;
+}
+
+.titulo--medio {
+    font-size: 2.4rem;
+}
+
+.titulo--chamada {
+    font-size: 3rem;
+}
+
+.titulo--pequeno {
+    font-size: 1.2rem;
+}
+
+.titulo--secao {
+    position: relative;
+    padding-left: 4.4rem;
+}
+
+.titulo--secao::before {
+    content: '';
+    background-color: var(--cor-destaque);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    z-index: -1;
+}
+
+.titulo--upper {
+    text-transform: uppercase;
+}
+
+/*========= Subtítulos ==========*/
+
+.subtitulo {
+    color: var(--preto);
+    font: 300 1.6rem 'Josefin Sans', sans-serif;
+}
+
+.subtitulo--chamada {
+    font-size: 1.4rem;
+}
+
+/*========= Textos ==========*/
+.texto {
+    font: 300 1.6rem 'Josefin Sans', sans-serif;
+    color: var(--preto);
+}
+
+.texto--grande {
+    font-size: 1.8rem;
+}
+
+.texto--pequeno {
+    font-size: 1.4rem;
+}
+
+.texto--branco {
+    color: var(--branco);
+}
+
+
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    .botao {
+        font-size: 1.6rem;
+    }
+
+    .titulo {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .titulo--chamada {
+        font-size: 6.4rem;
+    }
+
+    .subtitulo {
+        font-size: 2.4rem;
+    }
+
+    .subtitulo--chamada {
+        font-size: 2.2rem;
+    }
+    
+    .texto {
+        font-size: 2.4rem;
+    } 
+}
