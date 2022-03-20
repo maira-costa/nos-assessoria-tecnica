@@ -21,11 +21,12 @@
 
 /*---- LOGO ----*/
 .header__logo > img {
-    width: 6rem;
+    width: 4.2rem;
 }
 
 .header__logo--branco {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
     left: 0;
     position: absolute;
     top: 50%;
@@ -75,8 +76,7 @@
     width: 100%;
 }
 
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover {
     background-color: var(--vermelho);
 }
 
@@ -124,7 +124,7 @@
 #nav.show-menu .header__logo--branco {
     display: block;
     left: 1.5rem;
-    visibility: visible;
+    /* visibility: visible; */
 }
 
 #btn-mobile {
@@ -165,4 +165,55 @@
     background: var(--branco);
     top: -7px;
     transform: rotate(-135deg);
+}
+
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    #btn-mobile {
+        display: none;
+    }
+    
+    .menu {
+        background-color: var(--branco);
+        height: 100%;
+        padding: 0;
+        position: initial;
+        visibility: visible;
+        width: auto;
+    }
+
+    .menu__itens {
+        flex-direction: row;
+        gap: 2.4rem;
+        width: auto;
+    }
+
+    .menu__item {
+        text-align: left;
+        width: auto;
+    }
+    
+    .menu__link {
+        color: var(--preto);
+        font-size: 1.6rem;
+        height: auto;
+        padding: .5rem 1rem;
+        width: auto;
+    }
+
+    .menu__link:hover,
+    .menu__link:focus {
+        background-color: var(--branco);
+        border: 1px solid var(--vermelho);
+    }
+    
+
+    .menu__item > .botao {
+        color: var(--cinza-claro);
+        padding: .5rem 1rem;
+    }
+
+    .menu__social {
+        display: none;
+    }
 }

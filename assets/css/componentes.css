@@ -1,18 +1,23 @@
 /*========= Botões ==========*/
 .botao {
     align-items: center;
-    background-color: var(--vermelho);
-    border: none;
-    color: var(--branco);
-    font: 600 1.2rem Montserrat, sans-serif;
+    cursor: pointer;
+    font: 400 1.2rem Montserrat, sans-serif;
     outline: none;
-    padding: 0.625rem;
+    padding: 1rem 1.5rem;
     text-align: center;
     transition: all 0.4s ease-in-out;
 }
 
-.botao--responsivo {
-    width: 100%;
+.botao--primario {
+    background-color: var(--vermelho);
+    border: none;
+    color: var(--branco);
+}
+
+.botao--secundario {
+    border: 1px solid var(--vermelho);
+    color: var(--vermelho);
 }
 
 .botao:hover {
@@ -22,8 +27,8 @@
 /*========= Títulos ==========*/
 .titulo {
     color: var(--preto);
-    font: 700 3rem Monserrat, sans-serif;
-    margin-bottom: 4rem;
+    font: 700 3rem Montserrat, sans-serif;
+    margin-bottom: 6.4rem;
 }
 
 .titulo--medio {
@@ -32,6 +37,8 @@
 
 .titulo--chamada {
     font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 .titulo--pequeno {
@@ -96,15 +103,12 @@
 
     .titulo {
         font-size: 4rem;
-        margin-bottom: 3rem;
+        margin-bottom: 8rem;
     }
 
     .titulo--chamada {
         font-size: 6.4rem;
-    }
-
-    .subtitulo {
-        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
     }
 
     .subtitulo--chamada {
@@ -114,4 +118,8 @@
     .texto {
         font-size: 2.4rem;
     } 
+
+    .texto--pequeno {
+        font-size: 1.4rem;
+    }
 }

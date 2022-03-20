@@ -50,7 +50,7 @@
 .card__front {
     align-items: center;
     background-color: #00000042;
-    border: 1px solid var(--cor-destaque);
+    border: 1px solid var(--cinza-medio);
     display: flex;
     height: 100%;
     justify-content: center;
@@ -88,4 +88,24 @@
     background-color: var(--vermelho);
     bottom: 0;
     visibility: visible;
+}
+
+
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    .acoes__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .acoes__card {
+        padding: 1.6rem;
+    }
+    
+    .card__front > .titulo {
+        font-size: 2rem;
+    }
+
+    .card__back > .texto {
+        font-size: 1.8rem;
+    }
 }

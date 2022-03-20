@@ -1,3 +1,8 @@
+.container--contato {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 .formulario {
     border: 1px solid var(--cinza-claro);
     padding: 4rem 1rem;
@@ -39,4 +44,22 @@
 
 textarea {
     resize: none;
+}
+
+.formulario > .botao {
+    width: 100%;
+}
+
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    .formulario {
+        max-width: 60.8rem;
+        padding: 7.2rem 3.2rem;
+    }
+
+    .formulario > .subtitulo {
+        color: var(--branco);
+        margin: 0 0 8rem;
+        text-align: center;
+    }
 }

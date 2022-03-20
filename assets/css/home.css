@@ -5,6 +5,9 @@
 
 .container--inicio {
     align-items: center;
+    background-image: url("../img/home/home.webp");
+    background-position: 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column-reverse;
     gap: 4.8rem;
@@ -19,16 +22,44 @@
     flex-direction: column;
     justify-content: center;
 }
+
 .inicio__chamada > .titulo {
-    margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .inicio__chamada > .subtitulo {
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.2rem;
     text-align: center;
 }
 
+.chamada__botoes {
+    display: flex;
+    gap: 3.2rem;
+}
 .inicio__chamada > .botao {
     text-align: center;
+}
+
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    .container--inicio {
+        background-position: right bottom;
+        background-size: 70%;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .inicio__chamada {
+        align-items: flex-start;
+        max-width: 50rem;
+    }
+
+    .inicio__chamada > .titulo,
+    .inicio__chamada > .subtitulo {
+        text-align: left;
+    }
+
+    .inicio__chamada > .subtitulo {
+        margin-bottom: 4.8rem;
+    }
 }

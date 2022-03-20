@@ -75,3 +75,9 @@
     padding: 10px;
 }
 
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    .galeria__mosaico {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

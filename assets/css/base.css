@@ -48,3 +48,10 @@ img {
 .secao {
     padding: 8.8rem 0 5rem;
 }
+
+/*========= Media Queries ==========*/
+@media screen and (min-width:963px) {
+    .secao {
+        padding: 9.2rem 0 12.6rem;
+    }
+}
