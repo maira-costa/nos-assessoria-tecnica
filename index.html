@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!--CSS-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/container.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/componentes.css">
-    <link rel="stylesheet" href="assets/css/container.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/scr-rdr-only.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
 
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -49,22 +49,22 @@
                 <div class="menu" id="menu">
                     <ul class="menu__itens">
                         <li class="menu__item">
-                            <a href="#inicio" class="menu__link">Início</a>
+                            <a href="#inicio" class="menu__link menu__link--padrao">Início</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#quem-somos" class="menu__link">Quem somos</a>
+                            <a href="#quem-somos" class="menu__link menu__link--padrao">Quem somos</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#acoes" class="menu__link">Ações</a>
+                            <a href="#acoes" class="menu__link menu__link--padrao">Ações</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#galeria" class="menu__link">Galeria</a>
+                            <a href="#galeria" class="menu__link menu__link--padrao">Galeria</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#equipe" class="menu__link">Equipe</a>
+                            <a href="#equipe" class="menu__link menu__link--padrao">Equipe</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#contato" class="menu__link botao botao--primario">Contato</a>
+                            <a href="#contato" class="menu__link menu__link--destaque"><i class="fa-solid fa-envelope"></i></i>Contato</a>
                         </li>
                     </ul>
                     <ul class="menu__social">
@@ -116,62 +116,68 @@
             <div class="container container--acoes">
                 <h2 class="titulo titulo--secao">Nossas Ações</h2>
                 <ul class="acoes__cards">                   
-                    <li class="acoes__card acoes__card--um">
+                    <li class="acoes__card acoes__card--um" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Organização e participação comunitária</h3>
                         </div>
                         <div class="card__back">
                             <p class="texto texto--grande texto--branco">Desenvolvemos trabalhos com participação da comunidade promovendo a troca de saberes técnico e popular.</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
-                    <li class="acoes__card acoes__card--dois">
+                    <li class="acoes__card acoes__card--dois" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Plano de Urbanização</h3>
                         </div>
                         <div class="card__back">
-                            <p class="texto texto--grande texto--branco">Mediar a ordenação do território municipal definindo condições apropriadas para a ocupação do solo, provendo a localização dos principais equipamentos coletivos,infraestrutura urbana e serviços necessários para o melhor aproveitamento social através da realização de Plano/Projeto.</p>
+                            <p class="texto texto--grande texto--branco">Mediar a ordenação do território municipal definindo condições apropriadas para a ocupação do solo, provendo a localização dos principais equipamentos coletivos, infraestrutura urbana e serviços necessários para o melhor aproveitamento social através da realização de Plano/Projeto.</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
-                    <li class="acoes__card acoes__card--tres">
+                    <li class="acoes__card acoes__card--tres" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Palestras e Oficinas</h3>
                         </div>
                         <div class="card__back">
-                            <p class="texto texto--grande texto--branco">Troca de conhecimentos, através de oficinas, palestras,
-                            bate-papo, rodas de conversa. Por meio de contato prévio conseguimos ir até a comunidade ou sede de gestores, receber grupos sociais, ou usar dos espaços coletivos urbanos para desenvolver atividades voltadas para a socialização de informações.</p>
+                            <p class="texto texto--grande texto--branco">Por meio de contato prévio conseguimos ir até a comunidade ou sede de gestores, receber grupos sociais, ou usar dos espaços coletivos urbanos para desenvolver atividades voltadas para a socialização de informações.</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
-                    <li class="acoes__card acoes__card--quatro">
+                    <li class="acoes__card acoes__card--quatro" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Projeto e/ou construção de infraestrutura e equipamentos públicos</h3>
                         </div>
                         <div class="card__back">
-                            <p class="texto texto--grande texto--branco">Auxiliar ações e elaborar projetos relacionados à infraestrutura de comunidades urbanas e rurais. Planejar campanhas informativas de acesso ao transporte público, à moradia, urbanização, ou outras, que caracterizem melhoria para a qualidade de vida da população.</p>
+                            <p class="texto texto--grande texto--branco">Auxiliar ações e elaborar projetos relacionados à infraestrutura de comunidades urbanas e rurais. Planejar campanhas informativas de acesso a transporte público, moradia, urbanização, ou outras, que caracterizem melhoria para a qualidade de vida da população.</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
-                    <li class="acoes__card acoes__card--cinco">
+                    <li class="acoes__card acoes__card--cinco" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Regularização Fundiária</h3>
                         </div>
                         <div class="card__back">
                             <p class="texto texto--grande texto--branco">Viabilizar a garantia constitucional, no que se refere à função social da propriedade, e a garantia do direito à moradia, através de articulação legal e técnica que visa resolver irregularidades fundiárias.</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
-                    <li class="acoes__card acoes__card--seis">
+                    <li class="acoes__card acoes__card--seis" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Construção de novas unidades habitacionais</h3>
                         </div>
                         <div class="card__back">
                             <p class="texto texto--grande texto--branco">Acompanhamento técnico voltado para a produção de moradia com troca de experiências desde a elaboração do projeto até a finalização da obra.</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
-                    <li class="acoes__card acoes__card--sete">
+                    <li class="acoes__card acoes__card--sete" data-info>
                         <div class="card__front">
                             <h3 class="titulo titulo--medio">Reforma ou ampliação de imóveis existentes</h3>
                         </div>
                         <div class="card__back">
                             <p class="texto texto--grande texto--branco">Desenvolver projetos que atendam a critérios técnicos, mas que dialoguem com a realidade da comunidade. Uma construção que ocorre sem imposição de ideias e pontos de vista</p>
                         </div>
+                        <button class="botao-info"><i class="fa-solid fa-chevron-up"></i></button>
                     </li>
                 </ul>
             </div>
@@ -315,5 +321,6 @@
         </div>
     </footer>
     <script src="assets/js/header.js"></script>
+    <script src="assets/js/acoes.js"></script>
 </body>
 </html>
