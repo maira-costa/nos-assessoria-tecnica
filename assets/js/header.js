@@ -49,7 +49,7 @@ window.addEventListener('scroll', function () {
 
 /*Menu ativo conforme a seção visível na página*/
 
-const sections = document.querySelectorAll('main section[id]')
+const sections = document.querySelectorAll('section[id]')
 function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 2) 
 

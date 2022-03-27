@@ -41,6 +41,7 @@
 .card__img {
     filter: grayscale(100%);
 }
+
 .card__descricao {
     padding: 1rem;
 }

@@ -30,7 +30,7 @@
 }
 
 .quem-somos__texto > .texto {
-    border: 1px solid var(--cor-destaque);
+    border: 1px solid var(--vermelho);
     padding: 1.5rem 1rem;
     text-align: center;
 }

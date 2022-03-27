@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="O Nós é um grupo de Assessoria Técnica formado por arquitetos e urbanistas que atua em projetos colaborativos em áreas urbanas e rurais, junto a instituições públicas, organizações da sociedade civil e a comunidade em geral.">
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Nós Assesoria Técnica</title>
     
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">     
     
     <!--Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,10 +38,10 @@
     <a class="scr-rdr-only" href="#conteudoPrincipal">Pular para conteudo principal</a>
     <header class="header" id="header">
         <div class="container container--header">
-            <a class="header__logo header__logo--preto" href="#inicio"><img src="assets/img/logo/logo-preto.webp" alt="Nós Assessoria Técnica"></a>
+            <a class="header__logo header__logo--preto" href="#inicio"><img src="assets/img/logo/logo-preto.svg" alt="Nós Assessoria Técnica"></a>
             
             <nav class="nav" id="nav">
-                <a class="header__logo header__logo--branco" href="#inicio" ><img src="assets/img/logo/logo-branco.webp" alt="Nós Assessoria Técnica"></a>
+                <a class="header__logo header__logo--branco" href="#inicio" ><img src="assets/img/logo/logo-branco.svg" alt="Nós Assessoria Técnica"></a>
                 <div class="menu-mobile">
                     <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                         <span id="hamburger"></span>
@@ -48,24 +49,28 @@
                 </div>
                 <div class="menu" id="menu">
                     <ul class="menu__itens">
-                        <li class="menu__item">
-                            <a href="#inicio" class="menu__link menu__link--padrao">Início</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#quem-somos" class="menu__link menu__link--padrao">Quem somos</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#acoes" class="menu__link menu__link--padrao">Ações</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#galeria" class="menu__link menu__link--padrao">Galeria</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#equipe" class="menu__link menu__link--padrao">Equipe</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contato" class="menu__link menu__link--destaque"><i class="fa-solid fa-envelope"></i></i>Contato</a>
-                        </li>
+                        <div class="menu__esquerda">
+                            <li class="menu__item">
+                                <a href="#inicio" class="menu__link menu__link--padrao active">Início</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#quem-somos" class="menu__link menu__link--padrao">Quem somos</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#acoes" class="menu__link menu__link--padrao">Ações</a>
+                            </li>
+                        </div>
+                        <div class="menu__direita">
+                            <li class="menu__item">
+                                <a href="#galeria" class="menu__link menu__link--padrao">Galeria</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#equipe" class="menu__link menu__link--padrao">Equipe</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contato" class="menu__link menu__link--destaque"><i class="fa-solid fa-envelope"></i></i>Contato</a>
+                            </li>
+                        </div>
                     </ul>
                     <ul class="menu__social">
                         <li class="social__item">
@@ -271,7 +276,7 @@
         <section class="secao contato bg-preto" id="contato">
             <div class="container container--contato">
                 <form class="formulario" action="" method="post">
-                    <h2 class="titulo">Entre em contato</h2>
+                    <h2 class="titulo">Fale com a gente!</h2>
                     <p class="subtitulo">Ut sodales ante vel vestibulum porta. In id lacus tristique, suscipit.</p>
                     <label class="formulario__label scr-rdr-only" for="nome">Nome</label>
                     <input class="formulario__input" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
@@ -288,7 +293,7 @@
         <div class="container container--footer">
             <div class="infos">
                 <a class="footer__logo" href="#inicio">
-                    <img src="assets/img/logo/logo-branco.webp" alt="Nós Assessoria Técnica">
+                    <img src="assets/img/logo/logo-branco.svg" alt="Nós Assessoria Técnica">
                 </a>
                 <address class="texto texto--pequeno texto--branco">
                     São Luís, Maranhão, Brasil.<br>
