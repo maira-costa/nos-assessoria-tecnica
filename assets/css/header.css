@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     color: var(--cinza-claro);
-    font: 400 1.8rem Montserrat, sans-serif;
+    font: 400 1.8rem "Roboto Mono", sans-serif;
     height: 5rem;
     width: 100%;
 }
@@ -89,8 +89,14 @@
     background-color: var(--vermelho);
 }
 
+.menu__link--destaque {
+    position: relative;
+}
+
 .menu__link--destaque > i {
     margin-right: 1.6rem;
+    position: absolute;
+    left: -1.5em;
 }
 
 .menu__social {
@@ -306,6 +312,10 @@
         position: relative;
         transition: all 300ms ease-in-out;
         z-index: 1;
+    }
+
+    .menu__link--destaque > i {
+        position: initial;
     }
     
     .menu__link--destaque::before {

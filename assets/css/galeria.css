@@ -5,54 +5,37 @@
 }
 
 /*========= Imagens ==========*/
+.galeria__item {
+    overflow: hidden;
+}
+
 .galeria__img {
+    cursor: pointer;
     filter: grayscale(100%);
     transition: all 0.4s ease-in-out;
 }
 
 .galeria__img:hover, .galeria__img:focus {
     filter: grayscale(0%);
+    transform: scale(1.1);
 }
 
 .duas-colunas {
     grid-column: span 2;
 }
 
-/*========= Quadrados dos Mosaicos ==========*/
-.quadrado {
-    aspect-ratio: 1 / 1;
-    width: 100%;
+.duas-linhas {
+    grid-row: span 2;
 }
 
-.quadrado--branco {
-    background-color: var(--branco);
-}
+/*========= Quadrados ==========*/
 
-.quadrado--cinza {
-    background-color: var(--cinza-escuro);
-}
-
-.quadrado--destaque {
-    background-color: var(--cor-destaque);
-}
-
-.quadrado--listras {
-    background: repeating-linear-gradient(
-        135deg, 
-        transparent, 
-        transparent 5px,
-        var(--preto) 5px,
-        var(--preto) 6px
-    );
-}
-
-.quadrado--preto {
-    background-color: var(--preto);
-}
-
-.quadrado--vermelho {
-    background-color: var(--vermelho);
-}
+/* .quadrado--vermelho {
+    background-image: url("../img/galeria/logo-branco-preto.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 
 .quadrado--texto {
     align-items: center;
@@ -75,7 +58,22 @@
     padding: 10px;
 }
 
+.galeria__mosaico > .quadrado { 
+    transition: all 0.4s ease-in-out;
+}
+
+.galeria__mosaico > .quadrado:hover { 
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+}
+
 /*========= Media Queries ==========*/
+@media screen and (min-width:763px) {
+    .galeria__mosaico {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (min-width:963px) {
     .galeria__mosaico {
         grid-template-columns: repeat(6, 1fr);
