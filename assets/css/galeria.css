@@ -30,13 +30,6 @@
 
 /*========= Quadrados ==========*/
 
-/* .quadrado--vermelho {
-    background-image: url("../img/galeria/logo-branco-preto.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 .quadrado--texto {
     align-items: center;
     display: flex;
@@ -64,7 +57,54 @@
 
 .galeria__mosaico > .quadrado:hover { 
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+/*Image modal*/
+
+.modal {
+    width: 100%;
+    height: calc(100% - 7.2rem);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-top: -1px;
+    animation: zoom 0.3s ease-in-out;
+    padding: 2.4rem;
+    z-index: 10;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Botão fechar modal*/
+
+.closeBtn {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 25px;
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+    color: rgb(255, 255, 255);
 }
 
 /*========= Media Queries ==========*/
@@ -72,10 +112,33 @@
     .galeria__mosaico {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .modal {
+        padding: 4.8rem;
+    }
+
+    .closeBtn {
+        right: 5.4rem;
+    }
 }
 
 @media screen and (min-width:963px) {
     .galeria__mosaico {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .modal {
+        padding: 0;
+    }
+
+    .modal img {
+        height: 80%;
+        margin: auto;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .closeBtn {
+        right: 15%;
     }
 }

@@ -7,6 +7,11 @@
 .equipe__card {
     background: linear-gradient(#d8d8d8, #f7f7f7);
     height: 100%;
+    transition: all .6s ease-in-out;
+}
+
+.equipe__card:hover, .equipe__card:focus  {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card__img-wrap {
@@ -40,6 +45,11 @@
 
 .card__img {
     filter: grayscale(100%);
+    transition: all .6s ease-in-out;
+}
+
+.equipe__card:hover .card__img {
+    filter: grayscale(0%);
 }
 
 .card__descricao {
