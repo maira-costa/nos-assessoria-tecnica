@@ -14,8 +14,6 @@
 
 }
 
-
-
 .container--quem-somos {
     align-items: center;
     display: flex;
@@ -23,17 +21,23 @@
     justify-content: center;
 }
 
-.quem-somos__texto {
+.quem-somos__conteudo {
     background-color: var(--branco);
     padding: 1rem;
     z-index: 1;
 }
 
-.quem-somos__texto > .texto {
+.quem-somos__conteudo > .texto {
+    align-items: center;
     border: 1px solid var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
     padding: 1.5rem 1rem;
     text-align: center;
 }
+
 
 /*========= Media Queries ==========*/
 @media screen and (min-width:963px) {
@@ -43,13 +47,14 @@
         background-size: cover;
     }
 
-    .quem-somos__texto {
+    .quem-somos__conteudo {
         max-width: 60%;
         padding: 3.2rem;
     }
 
-    .quem-somos__texto > .texto {
-        font-size: 2.4rem;
-        padding: 6.4rem 3.2rem;
+    .quem-somos__conteudo > .texto {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        padding: 3.2rem;
     }
 }

@@ -7,6 +7,7 @@
 /*========= Imagens ==========*/
 .galeria__item {
     overflow: hidden;
+    position: relative;
 }
 
 .galeria__img {
@@ -26,6 +27,20 @@
 
 .duas-linhas {
     grid-row: span 2;
+}
+
+/*========= Legendas ==========*/
+.galeria__legenda {
+    /* display: none; */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.336);
+    bottom: 0;
+    left: 0;
+    color: var(--branco);
+    font-size: 1.4rem;
+    padding: .8rem 1.6rem;
+    width: 100%;
+
 }
 
 /*========= Quadrados ==========*/

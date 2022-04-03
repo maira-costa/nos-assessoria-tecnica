@@ -114,8 +114,12 @@
         </section>
         <section class="secao quem-somos bg-cinza" id="quem-somos">
             <div class="container container--quem-somos">
-                <div class="quem-somos__texto">
-                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum justo non nulla dapibus pellentesque. Suspendisse egestas viverra diam et porta. Curabitur vel sapien vitae mauris malesuada congue. Etiam non nisi ac odio aliquet mollis. Ut sodales ante vel vestibulum porta. In id lacus tristique, suscipit mauris semper, malesuada urna. Etiam imperdiet nisi non metus luctus tincidunt. </p>
+                <div class="quem-somos__conteudo">
+                    <div class="texto">
+                        <p>NÓS somos um grupo de arquitetas e arquitetos, urbanistas e especialistas em assessoria técnica para habitação no espaço urbano e rural. Atuamos em projetos colaborativos junto a instituições públicas, organizações da sociedade civil e a comunidades em geral.</p>
+                        <p>Utilizamos o método da assessoria técnica, que preconiza que o projeto deve levar em consideração a realidade local, atender às necessidades dos usuários finais e refletir os seus anseios, visando à sua autonomia. Portanto, a comunidade - ou os usuários do espaço - tem protagonismo em todo o processo decisório, desde o projeto, gerenciamento dos recursos - financeiros, materiais e humanos - até a execução do produto final. </p>
+                        <p>O que nos move é a possibilidade de trocar saberes, experiências e métodos de trabalho que possam melhorar de alguma forma a vida das pessoas nos espaços rurais e urbanos.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,7 +186,7 @@
                             <h3 class="titulo titulo--medio">Reforma ou ampliação de imóveis existentes</h3>
                         </div>
                         <div class="card__back">
-                            <p class="texto texto--grande">Desenvolvemos projetos que atendam a critérios técnicos e que também dialoguem com a realidade da comunidade. Uma construção que ocorre sem imposição de ideias e pontos de vista</p>
+                            <p class="texto texto--grande">Desenvolvemos projetos que atendam a critérios técnicos e que também dialoguem com a realidade da comunidade. Uma construção que ocorre sem imposição de ideias e pontos de vista.</p>
                         </div>
                         <button class="botao-info" data-botao-info><i class="fa-solid fa-chevron-up" data-botao-info></i></button>
                     </li>
@@ -194,37 +198,44 @@
             <div class="container container--galeria">
                 <h2 class="titulo titulo--secao"><span>G</span>aleria</h2>
                 <div class="galeria__mosaico">
-                    <div class="galeria__item duas-colunas">
+                    <figure class="galeria__item duas-colunas">
                         <img src="assets/img/galeria/img1.webp" alt="" class="galeria__img">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Roda de discussão de projeto de nova sede de Clube de Mães</figcaption>
+                    </figure>
                     <div class="quadrado quadrado--cinza"></div>
-                    <div class="galeria__item">
+                    <figure class="galeria__item">
                         <img src="assets/img/galeria/img2.webp" alt="" class="galeria__img">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Estudo de disposição de ambientes</figcaption>
+                    </figure>
                     <div class="quadrado quadrado--preto"></div>
-                    <div class="galeria__item">
+                    <figure class="galeria__item">
                         <img src="assets/img/galeria/img4.webp" alt="" class="galeria__img">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Produção de material para discussão de projeto</figcaption>
+                    </figure>
                     <div class="quadrado quadrado--listras"></div>
-                    <div class="galeria__item duas-colunas">
+                    <figure class="galeria__item duas-colunas">
                         <img src="assets/img/galeria/img3.webp" alt="" class="galeria__img ">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Aviso de reunião com arquitetos do Nós</figcaption>
+                    </figure>
                     <div class="quadrado quadrado--branco quadrado--texto">
                         <p class="texto texto--pequeno">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum justo non nulla. </p>
                     </div>
-                    <div class="galeria__item duas-colunas duas-linhas">
+                    <figure class="galeria__item duas-colunas duas-linhas">
                         <img src="assets/img/galeria/img7.webp" alt="" class="galeria__img">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Reconhecimento de terreno</figcaption>
+                    </figure>
                     <div class="quadrado quadrado--cinza quadrado--texto">
                         <p class="texto texto--pequeno">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum justo non nulla. </p>
                     </div>
-                    <div class="galeria__item">
+                    <figure class="galeria__item">
                         <img src="assets/img/galeria/img5.webp" alt="" class="galeria__img">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Reconhecimento de terreno</figcaption>
+                    </figure>
                     <div class="quadrado quadrado--vermelho"></div>
-                    <div class="galeria__item">
+                    <figure class="galeria__item">
                         <img src="assets/img/galeria/img6.webp" alt="" class="galeria__img">
-                    </div>
+                        <figcaption class="galeria__legenda texto">Discussão de projeto</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -294,7 +305,7 @@
             <div class="container container--contato">
                 <form class="formulario" action="" method="post">
                     <h2 class="titulo">Fale com a gente!</h2>
-                    <p class="subtitulo">Ut sodales ante vel vestibulum porta. In id lacus tristique, suscipit.</p>
+                    <p class="subtitulo">Estamos sempre dispostos a conversar sobre o nosso trabalho e atuar junto à comunidade.</p>
                     <label class="formulario__label scr-rdr-only" for="nome">Nome</label>
                     <input class="formulario__input" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
                     <label class="formulario__label scr-rdr-only" for="email">E-mail</label>
