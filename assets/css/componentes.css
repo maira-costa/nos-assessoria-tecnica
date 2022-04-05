@@ -126,7 +126,7 @@
 
 /*========= Quadrados dos Mosaicos ==========*/
 .quadrado {
-    aspect-ratio: 1 / 1;
+    height: auto;
     width: 100%;
 }
 
@@ -137,10 +137,6 @@
 .quadrado--cinza {
     background-color: var(--cinza-escuro);
 }
-
-/* .quadrado--destaque {
-    background-color: var(--cor-destaque);
-} */
 
 .quadrado--listras {
     background: repeating-linear-gradient(
@@ -162,6 +158,47 @@
 
 
 /*========= Media Queries ==========*/
+@media screen and (min-width:763px) {
+    .botao {
+        font-size: 1.8rem;
+    }
+
+    .titulo {
+        font-size: 4.8rem;
+        /* margin-bottom: 8rem; */
+    }
+
+    .titulo.titulo--chamada {
+        font-size: 4.8rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .subtitulo--chamada {
+        font-size: 2.4rem;
+    }
+
+    .titulo--secao::before {
+        width: 75px;
+        height: 100%;
+    }
+
+    .titulo--medio {
+        font-size: 3.2rem;
+    }
+
+    .titulo--pequeno {
+        font-size: 1.6rem;
+    }
+    
+    .texto {
+        font-size: 1.8rem;
+    } 
+
+    .texto--pequeno {
+        font-size: 1.4rem;
+    }
+}
+
 @media screen and (min-width:963px) {
     .botao {
         font-size: 1.6rem;
@@ -193,6 +230,7 @@
         margin-right: 3px;
     }
     
+
     .texto {
         font-size: 2.4rem;
     } 

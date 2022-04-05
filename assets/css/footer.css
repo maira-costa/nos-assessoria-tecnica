@@ -49,8 +49,21 @@ address.texto {
     font-size: 2.4rem;
 }
 
-.direitos {
+.infos-dev {
+    background-color: var(--preto);
+    border-top: 1px solid var(--cinza-escuro);
+    padding: 1.6rem 0;
     text-align: center;
+}
+
+.infos-dev > .texto {
+    color: var(--cinza-medio);
+    font-weight: 500;
+}
+
+.infos-dev > .texto > a{
+    color: var(--branco);
+    font-weight: 700;
 }
 
 /*========= Media Queries ==========*/
