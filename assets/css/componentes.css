@@ -3,7 +3,7 @@
     align-items: center;
     border: none;
     cursor: pointer;
-    font: 400 1.2rem "Roboto Mono", sans-serif;
+    font: 400 1.4rem "Roboto Mono", sans-serif;
     outline: none;
     padding: .5em 1em;
     position: relative;
@@ -161,7 +161,7 @@
 /*========= Media Queries ==========*/
 @media screen and (min-width:763px) {
     .botao {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
     }
 
     .titulo {

@@ -53,19 +53,19 @@
 }
 
 .galeria__item--cinco {
-    order: 10;
+    order: 1;
 }
 
 .galeria__item--seis {
-    order: 7;
+    order: 0;
 }
 
 .galeria__item--sete {
-    order: 9;
+    order: 2;
 }
 
 .galeria__item--oito {
-    order: 11;
+    order: 3;
 }
 
 /*========= Legendas ==========*/
@@ -122,11 +122,11 @@
 }
 
 .galeria__mosaico > .quadrado--branco {
-    order: 12;
+    order: 1;
 }
 
 .galeria__mosaico > .quadrado--listras {
-    order: 5;
+    order: 4;
 }
 
 
