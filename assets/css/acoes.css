@@ -2,11 +2,6 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr;
-    /* display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
 }
 
 .acoes__card {
@@ -15,9 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: var(--branco); */
     display: flex;
-    /* border: 2px solid var(--preto); */
     justify-content: center;
     overflow: hidden;
     padding: 2rem;
@@ -80,7 +73,7 @@
 
 .card__back {
     /* background: linear-gradient(#A81201, #610f06); */
-    background-color: var(--preto);
+    background-color: var(--vermelho);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,34 +88,6 @@
     width: 100%;
 }
 
-/* .acoes__card--um .card__back {
-    background-image: url("../img/acoes/organizacao.webp");
-}
-
-.acoes__card--dois .card__back {
-    background-image: url("../img/acoes/plano.webp");
-}
-
-.acoes__card--tres .card__back {
-    background-image: url("../img/acoes/palestras.webp");
-}
-
-.acoes__card--quatro .card__back {
-    background-image: url("../img/acoes/projeto.webp");
-}
-
-.acoes__card--cinco .card__back {
-    background-image: url("../img/acoes/regularizacao.webp");
-}
-
-.acoes__card--seis .card__back {
-    background-image: url("../img/acoes/construcao.webp");
-}
-
-.acoes__card--sete .card__back {
-    background-image: url("../img/acoes/organizacao.webp");
-} */
-
 .card__back > .texto {
     align-items: center;
     /* border: 1px solid var(--preto); */
@@ -136,7 +101,6 @@
 }
 
 .botao-info {
-    /* background-color: rgba(255, 255, 255, 0.555); */
     background-color: transparent;
     border: none;
     bottom: 0;
