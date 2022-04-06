@@ -80,11 +80,11 @@
 
 .card__back {
     /* background: linear-gradient(#A81201, #610f06); */
-    background-color: var(--branco);
+    background-color: var(--preto);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid var(--vermelho);
+    /* border: 2px solid var(--vermelho); */
     height: 100%;
     left: 0;
     opacity: 0;
@@ -126,7 +126,7 @@
 .card__back > .texto {
     align-items: center;
     /* border: 1px solid var(--preto); */
-    color: var(--preto);
+    color: var(--branco);
     display: flex;
     font: 400 1.8rem Karla, sans-serif;
     height: 100%;
@@ -159,7 +159,7 @@
 }
 
 .ativo > .botao-info > i {
-    color: var(--vermelho);
+    /* color: var(--vermelho); */
     transform: rotate(180deg);
 }
 

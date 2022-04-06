@@ -40,13 +40,6 @@ function changeHeaderWhenScroll() {
   }
 }
 
-/* When Scroll */
-window.addEventListener('scroll', function () {
-  changeHeaderWhenScroll()
-  // backToTop()
-  // activateMenuAtCurrentSection()
-})
-
 /*Menu ativo conforme a seção visível na página*/
 
 const sections = document.querySelectorAll('section[id]')
@@ -73,3 +66,9 @@ function activateMenuAtCurrentSection() {
     }
   }
 }
+
+/* When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  activateMenuAtCurrentSection()
+})

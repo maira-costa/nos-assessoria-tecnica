@@ -53,6 +53,7 @@
     color: var(--preto);
     font: 700 3rem "Roboto Mono", sans-serif;
     margin-bottom: 6.4rem;
+    -webkit-font-smoothing: auto;
 }
 
 .titulo--medio {
@@ -165,7 +166,6 @@
 
     .titulo {
         font-size: 4.8rem;
-        /* margin-bottom: 8rem; */
     }
 
     .titulo.titulo--chamada {

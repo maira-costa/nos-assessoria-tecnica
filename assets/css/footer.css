@@ -61,7 +61,7 @@ address.texto {
     font-weight: 500;
 }
 
-.infos-dev > .texto > a{
+.infos-dev > .texto > span{
     color: var(--branco);
     font-weight: 700;
 }
@@ -97,14 +97,19 @@ address.texto {
         padding: 0 .8rem;
         width: auto;
     }
+
+    .social__item {
+        transition: all .3s ease-in-out;
+    }
+    
+    .social__item:hover {
+        transform: translateY(-5px);
+    }
     
     .social__icone--pequeno > i {
         color: var(--branco);
         font-size: 2.4rem;
     }
     
-    /* .direitos {
-        
-    } */
     
 }

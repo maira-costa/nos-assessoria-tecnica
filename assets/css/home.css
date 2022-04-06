@@ -1,6 +1,7 @@
 .inicio {
     padding: 7.2rem 0 0;
 }
+
 .container--inicio {
     align-items: center;
     display: flex;
@@ -43,12 +44,13 @@
 /*========= Media Queries ==========*/
 @media screen and (min-width:963px) {
     .container--inicio {
-        background-image: url("../img/home/home.webp");
+        /* background-image: url("../img/home/home.webp");
         background-position: right bottom;
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: 70%; */
         flex-direction: row;
         justify-content: start;
+        position: relative;
     }
 
     .inicio__chamada {
@@ -68,6 +70,9 @@
     }
 
     .inicio__imagem {
-        display: none;
+        position: absolute;
+        width: 70%;
+        bottom: 0;
+        right: 0;
     }
 }
