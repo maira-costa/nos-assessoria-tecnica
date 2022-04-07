@@ -58,7 +58,6 @@ function activateMenuAtCurrentSection() {
       document
         .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.add('active')
-      console.log(sectionId)
     } else {
       document
         .querySelector('nav ul li a[href*=' + sectionId + ']')

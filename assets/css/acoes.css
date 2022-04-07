@@ -49,9 +49,6 @@
 
 .card__front {
     align-items: center;
-    /* background-color: #00000042; */
-    /* border: 1px solid var(--cinza-medio); */
-    /* border: 2px solid var(--preto); */
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -63,7 +60,6 @@
 
 .card__front > .titulo {
     color: var(--branco);
-    /* color: var(--preto); */
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 0;
@@ -72,12 +68,10 @@
 
 
 .card__back {
-    /* background: linear-gradient(#A81201, #610f06); */
     background-color: var(--vermelho);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* border: 2px solid var(--vermelho); */
     height: 100%;
     left: 0;
     opacity: 0;
@@ -90,14 +84,12 @@
 
 .card__back > .texto {
     align-items: center;
-    /* border: 1px solid var(--preto); */
     color: var(--branco);
     display: flex;
     font: 400 1.8rem Karla, sans-serif;
     height: 100%;
     padding: 1.6rem;
     text-align: center;
-    /* text-shadow: 1px 1px 2px black; */
 }
 
 .botao-info {
@@ -123,7 +115,6 @@
 }
 
 .ativo > .botao-info > i {
-    /* color: var(--vermelho); */
     transform: rotate(180deg);
 }
 

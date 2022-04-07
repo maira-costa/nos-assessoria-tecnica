@@ -21,14 +21,6 @@
 
 /*---- LOGO ----*/
 
-/* .header__logo {
-    font: 400 1.4rem 'Roboto Condensed', sans-serif;
-    color: var(--preto);
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-} */
-
 .header__logo > img {
     width: 4.2rem;
 }
@@ -139,7 +131,6 @@
 #nav.show-menu .header__logo--branco {
     display: block;
     left: 1.5rem;
-    /* visibility: visible; */
 }
 
 #btn-mobile {
@@ -273,53 +264,6 @@
     .menu__link--padrao.active::before {
         width: 100%;
     }
-
-    /* .menu__link--padrao::before {
-        content: '';
-        position: absolute;
-        height: 0;
-        width: 0;
-        border: 1px solid transparent;
-        bottom: 0;
-        left: 0;
-        box-sizing: border-box;
-        transition: height 0.2s linear, width 0.2s linear 0.2s;
-    }
-
-    .menu__link--padrao::after {
-        content: '';
-        position: absolute;
-        height: 0;
-        width: 0;
-        border: 1px solid transparent;
-        top: 0;
-        right: 0;
-        box-sizing: border-box;
-        transition: height 0.2s linear, width 0.2s linear 0.2s;
-    }
-
-    .menu__link--padrao:hover::before,
-    .menu__link--padrao:focus::before,
-    .menu__link--padrao.active::before,
-    .menu__link--padrao.active::before {
-        height: 100%;
-        width: 100%;
-        border-color: var(--vermelho);
-        border-right: none;
-        border-bottom: none;
-        
-    }
-
-    .menu__link--padrao:hover::after,
-    .menu__link--padrao:focus::after,
-    .menu__link--padrao.active::after,
-    .menu__link--padrao.active::after {
-        height: 100%;
-        width: 100%;
-        border-color: var(--vermelho);
-        border-left: none;
-        border-top: none;
-    } */
     
     .menu__link--destaque {
         border: 2px solid var(--vermelho);

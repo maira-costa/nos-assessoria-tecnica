@@ -28,10 +28,6 @@
     grid-column: span 2;
 }
 
-/* .duas-colunas > .galeria__img {
-    height: auto;
-} */
-
 .duas-linhas {
     grid-row: span 2;
 }
@@ -298,7 +294,6 @@
 
     .quadrado--preto {
         order: 0;
-        height: 100%;
     }
 
     .galeria__mosaico > .quadrado--listras {
